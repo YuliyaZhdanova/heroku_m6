@@ -43,19 +43,14 @@ def example_api_response(some_id):
 def api_delete(uid): 
     return redirect("/")
 
-
-@route("/api/complete/<uid:int>")
-def api_complete(uid): 
-    return "Ok"
-
-
+ 
 @route('/css/<filename>')
 def send_css(filename):
     return static_file(filename, root='static/css')
 
 
 @route('/js/<filename>')
-def send_css(filename):
+def send_js(filename):
     return static_file(filename, root='static/js')
 
 
